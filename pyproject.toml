@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "hlb-demo"
+version = "0.1.0"
+description = ""
+authors = ["Nay Zaw Aung Win <100609659+nzaw96@users.noreply.github.com>"]
+readme = "README.md"
+packages = [{include = "hlb_demo"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+dbt-core = "^1.6.6"
+dbt-snowflake = "^1.6.4"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
