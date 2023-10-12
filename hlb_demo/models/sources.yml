@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: demo_data
+    database: fivetran_database  
+    schema: google_sheets
+    tables:
+      - name: customers
+      - name: orders
+      - name: payments
