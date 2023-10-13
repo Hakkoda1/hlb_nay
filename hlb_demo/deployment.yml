@@ -8,4 +8,4 @@ jobs:
       - 30 14 * * 6-7 # weekends at 2.30 pm
    steps:
      - name: run dup_cust model
-       command: dbt build --select +duplicate_customers
+       command: dbt run --select +duplicate_customers
