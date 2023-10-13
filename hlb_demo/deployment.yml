@@ -1,0 +1,9 @@
+dbtVersion: 1.6.3
+
+jobs:
+  - name: identify duplicate customers
+    schedule: 
+      - 10 8 * * 1-5
+    steps:
+      - name: run duplicate_customers model
+      - command: dbt run --select duplicate_customers
